@@ -94,7 +94,19 @@
     margin: 5px;
 }
 
+.msg-header-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.msg-time {
+    color: rgb(71, 71, 71, 0.7);
+    font-size: 14px;
+}
+
 .message-username {
+    font-weight: bold;
     color: #444444;
     font-size: 20px;
     padding: 2px;

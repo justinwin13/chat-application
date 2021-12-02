@@ -54,12 +54,12 @@ class Chat implements MessageComponentInterface {
 				$select->execute();
 				$result = $select->fetch(PDO::FETCH_ASSOC);
 				if (empty($result['displayname'])) {
-					$response_from = "<div class='user-message-container my-msg'><h1 class='message-username'>".$result['username']." <span class='tag-line'>#".$result['uid']."</span></h1><p class='user-message'>".$chat_msg."</p></div>";
-					$response_to = "<div class='user-message-container'><h1 class='message-username'>".$result['username']." <span class='tag-line'>#".$result['uid']."</span></h1><p class='user-message'>".$chat_msg."</p></div>";
+					$response_from = "<div class='user-message-container my-msg'><div class='msg-header-wrapper'><span class='message-username'>".$result['username']." <span class='tag-line'>#".$result['uid']."</span></span><span class='msg-time'>$timestamp</span></div><p class='user-message'>".$chat_msg."</p></div>";
+					$response_to = "<div class='user-message-container'><div class='msg-header-wrapper'><span class='message-username'>".$result['username']." <span class='tag-line'>#".$result['uid']."</span></span><span class='msg-time'>$timestamp</span></div><p class='user-message'>".$chat_msg."</p></div>";
 				}
 				else {
-					$response_from = "<div class='user-message-container my-msg'><h1 class='message-username'>".$result['displayname']." <span class='tag-line'>#".$result['uid']."</span></h1><p class='user-message'>".$chat_msg."</p></div>";
-					$response_to = "<div class='user-message-container'><h1 class='message-username'>".$result['displayname']." <span class='tag-line'>#".$result['uid']."</span></h1><p class='user-message'>".$chat_msg."</p></div>";
+					$response_from = "<div class='user-message-container my-msg'><div class='msg-header-wrapper'><span class='message-username'>".$result['displayname']." <span class='tag-line'>#".$result['uid']."</span></span><span class='msg-time'>$timestamp</span></div><p class='user-message'>".$chat_msg."</p></div>";
+					$response_to = "<div class='user-message-container'><div class='msg-header-wrapper'><span class='message-username'>".$result['displayname']." <span class='tag-line'>#".$result['uid']."</span></span><span class='msg-time'>$timestamp</span></div><p class='user-message'>".$chat_msg."</p></div>";
 				}
 			
 				// Output
