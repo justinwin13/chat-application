@@ -9,8 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/global-styles.css">
-    <link rel="stylesheet" href="/assets/css/home-styles.css">
     <link rel="stylesheet" href="/assets/css/nav-bar-styles.css">
+    <link rel="stylesheet" href="/assets/css/home-styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/cecb91c862.js" crossorigin="anonymous"></script>
     <title>Home | Messenger</title>

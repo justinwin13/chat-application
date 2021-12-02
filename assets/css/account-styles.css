@@ -1,3 +1,7 @@
+.fa-user {
+    color: #fad368;
+}
+
 .account-card {
     margin: auto;
     background-color: rgb(255, 255, 255);
@@ -116,7 +120,7 @@
     * {
         font-size: 18px;
     }
-    
+
     .account-card {
         width: 270px;
         height: 370px;

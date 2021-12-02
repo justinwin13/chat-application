@@ -5,6 +5,10 @@
     flex-direction: row;
 }
 
+.fa-comment-alt {
+    color: #fad368;
+}
+
 .title-1, .title-2, .title-3 {
     padding: 20px;
     width: 12vw;
@@ -193,7 +197,7 @@
     flex-direction: column;
     width: 97.5%;
     height: 100%;
-    
+    overflow: auto;
 }
 .member-list-item {
     color: #444444;
