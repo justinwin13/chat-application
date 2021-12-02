@@ -10,7 +10,7 @@ $(".fa-comment-alt").click(()=> {
 
 // redirects to cart page whent he shopping cart is clicked
 $(".fa-plus-square").click(()=> {
-    $(location).attr('href','#');
+    $(location).attr('href','');
 });
 
 // redirects to cart page whent he shopping cart is clicked

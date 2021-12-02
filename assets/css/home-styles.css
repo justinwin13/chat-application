@@ -1,4 +1,5 @@
 .main-container {
+    max-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -129,7 +130,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 99.4%;
     height: 170px;
 }
 
@@ -242,6 +243,12 @@
 
     .chat-box {
         height: 91%;
+        padding: 15px;
+    }
+
+    #chat-area {
+        vertical-align: middle;
+        padding: 5px;
     }
 
     .send-container {
@@ -252,5 +259,9 @@
 @media only screen and (max-width: 525px) {
     .send-container {
         font-size: 8px;
-    }   
+    } 
+    
+    .chat-box {
+        padding: 8px;
+    }
 }
