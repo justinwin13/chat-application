@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     width: 950px;
-    height: 80%;
+    height: 800px;
     margin: auto;
 }
 
@@ -133,3 +133,17 @@
     transition: ease-in-out 0.2s;
 }
 
+@media only screen and (max-width: 1024px) {
+    .main-container {
+        flex-direction: column;
+        justify-content: center;
+        width: 500px;
+    }
+    .left-container {
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .index-paragraph {
+        text-align: center;
+    }
+}

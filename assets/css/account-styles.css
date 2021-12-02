@@ -34,7 +34,6 @@
     font-family: 'Open-sans', sans-serif;
     font-size: 16px;
     border: none;
-    margin: 10px;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -71,6 +70,7 @@
 }
 
 .logout-wrapper {
+    margin: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -93,4 +93,45 @@
 .logout:hover {
     background-color: rgb(241, 93, 93);
     transition: ease-in-out 0.2s;
+}
+
+@media only screen and (max-width: 525px) {
+    .account-card {
+        width: 400px;
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .account-card {
+        width: 325px;
+        height: 425px;
+    }
+    .save-btn, .logout {
+        width: 140px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    * {
+        font-size: 18px;
+    }
+    
+    .account-card {
+        width: 270px;
+        height: 370px;
+    }
+
+    .account-title {
+        font-size: 22px;
+    }
+
+    .username, .password, .display {
+        width: 92%;
+    }
+
+    .save-btn, .logout {
+        font-size: 14px;
+        width: 110px;
+    }
 }

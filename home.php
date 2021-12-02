@@ -17,10 +17,10 @@
 </head>
 <body>
     <main>
-    <?php 
-        include './assets/php/nav_bar.php'; 
-    ?>
         <div class="main-container">
+        <?php 
+            include './assets/php/nav_bar.php'; 
+        ?>
             <div class="container-1">
                 <h1 class="title-1">Groups</h1>
                 <ul class="group-list">
